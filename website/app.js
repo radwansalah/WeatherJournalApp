@@ -5,7 +5,7 @@ const unit = "metric";
 
 // Create a new date instance dynamically with JS
 let d = new Date();
-let newDate = d.getMonth() + "." + d.getDate() + "." + d.getFullYear();
+let newDate = d.getMonth() + 1 + "." + d.getDate() + "." + d.getFullYear(); // getMonth() returns the month (from 0 to 11) of a date, so we need to add 1 to get the current month number.
 
 /**
  * @param {string} url: the url that we will use to call the postProjectData API at the backend
